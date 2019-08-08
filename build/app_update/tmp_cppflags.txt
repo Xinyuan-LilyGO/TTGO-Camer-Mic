@@ -1,0 +1,1 @@
+v0.9.2-13-gfec860d-dirty camera_web_server v3.3-beta1-1197-gf44d35023-dirt
