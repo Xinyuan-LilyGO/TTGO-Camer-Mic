@@ -41,7 +41,7 @@ endmenu
 menu "Camera Pins"
 choice CAMERA_MODEL
     bool "Select Camera Pinout"
-    default CAMERA_MODEL_WROVER_KIT
+    default CAMERA_MODEL_CUSTOM
     help
         Select Camera Pinout.
 
@@ -200,7 +200,9 @@ config ESP_FACE_RECOGNITION_ENABLED
     help
         Enables ESP-WHO Face Recognition through the web interface.
 endmenu
-menu "Pinos Display"
+
+
+menu "Display Pins"
 	config SDA
 	int "SDA"
 	default 21
@@ -232,4 +234,41 @@ menu "Pinos Display"
 		Selecione o endereço i2c do seu display
  		Oled
 
+endmenu
+
+menu "Other Pins"
+	config IIS_SCLK
+	int "IIS_SCLK"
+	default 27
+	range 0 39
+	help
+		IIS SCLK pin
+
+	config IIS_LCLK
+	int "IIS_LCLK"
+	default 26
+	range 0 39
+	help
+        IIS LCLK PIN
+	
+    config IIS_DSIN
+	int "IS_DSIN"
+	default 25
+	range -1 39
+	help
+        IIS DSIN PIN
+
+    config IIS_DOUT
+	int "IIS_DOUT"
+	default -1
+	range -1 39
+	help
+        IIS DOUT PIN
+
+    config PIR_PIN
+	int "PIR_PIN"
+	default 39
+	range -1 39
+	help
+        Infrared pyroelectric sensor
 endmenu

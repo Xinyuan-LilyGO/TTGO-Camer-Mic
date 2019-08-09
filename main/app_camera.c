@@ -29,7 +29,6 @@ static const char *TAG = "app_camera";
 
 void app_camera_main ()
 {
-#if CONFIG_CAMERA_MODEL_ESP_EYE
     /* IO13, IO14 is designed for JTAG by default,
      * to use it as generalized input,
      * firstly declair it as pullup input */
@@ -42,7 +41,6 @@ void app_camera_main ()
     gpio_config(&conf);
     conf.pin_bit_mask = 1LL << 14;
     gpio_config(&conf);
-#endif
 
     camera_config_t config;
     config.ledc_channel = LEDC_CHANNEL_0;
@@ -86,4 +84,5 @@ void app_camera_main ()
     }
     //drop down frame size for higher initial frame rate
     s->set_framesize(s, FRAMESIZE_QVGA);
+    s->set_vflip(s, 1);
 }
