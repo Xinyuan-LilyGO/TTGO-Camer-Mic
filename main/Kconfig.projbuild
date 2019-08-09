@@ -79,7 +79,7 @@ config CAMERA_PIN_XCLK
     depends on CAMERA_MODEL_CUSTOM
     int "XCLK pin"
     range 0 33
-    default 21
+    default 32
     help
         Select Camera XCLK pin.
 
@@ -87,7 +87,7 @@ config CAMERA_PIN_SIOD
     depends on CAMERA_MODEL_CUSTOM
     int "SIOD pin"
     range 0 33
-    default 26
+    default 13
     help
         Select Camera SIOD pin.
 
@@ -95,7 +95,7 @@ config CAMERA_PIN_SIOC
     depends on CAMERA_MODEL_CUSTOM
     int "SIOC pin"
     range 0 33
-    default 27
+    default 12
     help
         Select Camera SIOC pin.
 
@@ -103,7 +103,7 @@ config CAMERA_PIN_VSYNC
     depends on CAMERA_MODEL_CUSTOM
     int "VSYNC pin"
     range 0 39
-    default 25
+    default 5
     help
         Select Camera VSYNC pin.
 
@@ -111,7 +111,7 @@ config CAMERA_PIN_HREF
     depends on CAMERA_MODEL_CUSTOM
     int "HREF pin"
     range 0 39
-    default 23
+    default 18
     help
         Select Camera HREF pin.
 
@@ -119,7 +119,7 @@ config CAMERA_PIN_PCLK
     depends on CAMERA_MODEL_CUSTOM
     int "PCLK pin"
     range 0 39
-    default 25
+    default 19
     help
         Select Camera PCLK pin.
 
@@ -127,7 +127,7 @@ config CAMERA_PIN_Y2
     depends on CAMERA_MODEL_CUSTOM
     int "Y2 pin"
     range 0 39
-    default 4
+    default 34
     help
         Select Camera Y2 pin.
 
@@ -135,7 +135,7 @@ config CAMERA_PIN_Y3
     depends on CAMERA_MODEL_CUSTOM
     int "Y3 pin"
     range 0 39
-    default 5
+    default 2
     help
         Select Camera Y3 pin.
 
@@ -143,7 +143,7 @@ config CAMERA_PIN_Y4
     depends on CAMERA_MODEL_CUSTOM
     int "Y4 pin"
     range 0 39
-    default 18
+    default 35
     help
         Select Camera Y4 pin.
 
@@ -151,7 +151,7 @@ config CAMERA_PIN_Y5
     depends on CAMERA_MODEL_CUSTOM
     int "Y5 pin"
     range 0 39
-    default 19
+    default 15
     help
         Select Camera Y5 pin.
 
@@ -159,7 +159,7 @@ config CAMERA_PIN_Y6
     depends on CAMERA_MODEL_CUSTOM
     int "Y6 pin"
     range 0 39
-    default 36
+    default 33
     help
         Select Camera Y6 pin.
 
@@ -167,7 +167,7 @@ config CAMERA_PIN_Y7
     depends on CAMERA_MODEL_CUSTOM
     int "Y7 pin"
     range 0 39
-    default 39
+    default 23
     help
         Select Camera Y7 pin.
 
@@ -175,7 +175,7 @@ config CAMERA_PIN_Y8
     depends on CAMERA_MODEL_CUSTOM
     int "Y8 pin"
     range 0 39
-    default 34
+    default 36
     help
         Select Camera Y8 pin.
 
@@ -183,7 +183,7 @@ config CAMERA_PIN_Y9
     depends on CAMERA_MODEL_CUSTOM
     int "Y9 pin"
     range 0 39
-    default 35
+    default 4
     help
         Select Camera Y9 pin.
 
@@ -191,14 +191,12 @@ endmenu
 
 config ESP_FACE_DETECT_ENABLED
     bool "ESP-WHO Face Detection"
-    default y
     help
         Enables ESP-WHO Face Detection through the web interface.
 
 config ESP_FACE_RECOGNITION_ENABLED
     bool "ESP-WHO Face Recognition"
     depends on ESP_FACE_DETECT_ENABLED
-    default y
     help
         Enables ESP-WHO Face Recognition through the web interface.
 endmenu
