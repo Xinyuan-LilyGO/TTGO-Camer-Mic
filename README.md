@@ -1,5 +1,8 @@
 # Camera with Web Server
 
+
+<img src="./png/image.jpg" width = "650" height = "680" alt="xx" align=center />
+
 # Preparation
 To run this example, you need the following components:
 - [esp-who](https://github.com/espressif/esp-who) framework
