@@ -4,7 +4,7 @@
 To run this example, you need the following components:
 - [esp-who](https://github.com/espressif/esp-who) framework
 
-#Quick start
+# Quick start
 
 1. Place this project file in the esp-who root directory
 2. Configure the example via `make menuconfig`;
@@ -25,7 +25,7 @@ make -j
 make flash monitor
 ```
 
-*** When compiling under the Windows WLS liunx subsystem, you may encounter the error as shown in the figure. The solution is to find the file and comment out the unused variables.***
+***When compiling under the Windows WLS liunx subsystem, you may encounter the error as shown in the figure. The solution is to find the file and comment out the unused variables.***
 
 ![error](./png/error.png)
 
