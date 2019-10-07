@@ -22,7 +22,7 @@ To run this example, you need the following components:
 ```
 git clone --recursive https://github.com/espressif/esp-who.git 
 cd esp-who
-git clone --recursive https://github.com/lewisxhe/camera_web_server.git
+git clone --recursive https://github.com/Xinyuan-LilyGO/TTGO-Camer-Mic.git
 make menuconfig
 make -j
 make flash monitor
